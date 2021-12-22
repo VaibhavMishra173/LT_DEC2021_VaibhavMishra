@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LueurTech-Software-Solutions-Pvt-Ltd</title>
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- total 8 potion will be here      -->
+    <!-- 
+        1. header
+        2.about
+        3.detail
+        4.heading
+        5. price
+        6.heading
+        7. service
+        8.footer 
+                    -->
+
+    <!-- main body -->
+
+    <div class="flex-container">
+
+        <!-- header -->
+        <div class="flex-items">
+            <nav class="navbar">
+                <!-- LOGO -->
+                <div class="logo"><img src="final-logo.png" class="limg" alt="Logo"></div>
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+                    <!-- USING CHECKBOX HACK -->
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <!-- NAVIGATION MENUS -->
+                    <div class="menu">
+                        <li class="design">
+                            <a href="#" onclick="web_design()">Web Design</a>
+                            <!-- DROPDOWN MENU -->
+                            <ul class="dropdown" id="webd">
+                                <li><a href="#" onClick = 'scrollDesignS()'>Starter</a></li>
+                                <li><a href="#" onClick = 'scrollDesignB()'>Basic</a></li>
+                                <li><a href="#" onClick = 'scrollDesignG()'>Grow</a></li>
+                            </ul>
+                        </li>
+                        <li onclick="topFunction()"><a href="#">Home</a></li>
+                        <li><a href="#" onclick="scrollAbout()">About</a></li>
+                        <li><a href="#" onclick="scrollContact()">Contact Us</a></li>
+                        <li class="services">
+                            <a href="#" onclick="service()">Our Services</a>
+                            <!-- DROPDOWN MENU -->
+                            <ul class="dropdown" id="serv">
+                                <li><a href="#" onclick="scrollService()">Web Development</a></li>
+                                <li><a href="#" onclick="scrollService()">Software Development</a></li>
+                                <li><a href="#" onclick="scrollService()">Internships</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- about -->
+        <div class="flex-items">
+
+            <div class="flex-containerabout">
+                <!-- img -->
+                <div class="flex-itemsabout">
+                    <img src="Community_FAQ-1.svg" alt="Site_Use">
+                </div>
+                <!-- content -->
+                <div class="flex-itemsabout">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card_image">
+                                <img src="final-logo.png" alt="Site Logo">
+                            </div>
+                            <div class="card_content">
+                                <h2 class="card_title">LueurTech</h2><hr><br>
+                                <p>LueurTech aims to empower your business with the power of innovation. We are a
+                                    company started by Fresh mind in developing and marketing products. </p>
+                                <p>If you would like to work on the latest tools and technologies in a fantastic flexible work
+                                    environment, come and join us.. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- detail -->
+        <div class="flex-items">
+
+            <div class="flex-containerdetail">
+                <!-- about internship role -->
+                <div class="flex-itemsdetail">
+                    <h1>
+                        Internships open for the role of:"Web Development & Designing"<br>
+                        <a href="#">Get Now</a>
+                    </h1>
+                </div>
+                <!-- img -->
+                <div class="flex-itemsdetail">
+                    <img src="development.png" alt="Development">
+                </div>
+            </div>
+        </div>
+
+        <!-- heading -->
+        <div class="flex-itemsheading">
+            <!-- heading for below items -->
+            <div class="flex-containerheading">
+                <div class="flex-itemsheading">
+                    <h1>
+                        Pricing for small business website design
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- price -->
+        <div class="flex-items">
+            <div class="pricing">
+                <div class="price-row">
+
+                    <!-- starter -->
+                    <div class="flex-itemsprice">
+                        <div class="activity starter">
+                            <div class="relative-block">
+                                <div class="activity-icon">
+                                    <p>&#8377; 2,999</p>
+                                </div>
+                                <div class="inactive">
+                                    <div class="title">Starter</div>
+                                </div>
+                                <div class="active">
+                                    <div class="title">Starter Plan</div>
+                                    <div class="sub-title">
+                                        <h3>for Small Business Owners</h3>
+                                        <h3>One Page Website</h3>
+                                        <h3>Free Domain</h3>
+                                        <h3>Free Hosting</h3>
+                                        <h3>Upto 5 Email Accounts</h3>
+                                        <a href="https://lueurtech.com/websites_pricing/" target="_blank">Get Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- basic -->
+                    <div class="flex-itemsprice">
+                        <div class="activity basic">
+                            <div class="relative-block">
+                                <div class="activity-icon">
+                                    <p>&#8377; 3,999</p>
+                                </div>
+                                <div class="inactive">
+                                    <div class="title">Basic</div>
+                                </div>
+                                <div class="active">
+                                    <div class="title">Basic Plan</div>
+                                    <div class="sub-title">
+                                        <h3>Static Website</h3>
+                                        <h3>Free Hosting</h3>
+                                        <h3>Free Domain</h3>
+                                        <h3>Upto 10 Email Accounts</h3>
+                                        <h3>Free Backend</h3>
+                                        <h3>Free Google Ads Account Setup</h3>
+                                        <a href="https://lueurtech.com/websites_pricing/" target="_blank">Get Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- grow -->
+                    <div class="flex-itemsprice">
+                        <div class="activity grow">
+                            <div class="relative-block">
+                                <div class="activity-icon">
+                                    <p>&#8377; 4,999</p>
+                                </div>
+                                <div class="inactive">
+                                    <div class="title">Grow</div>
+                                </div>
+                                <div class="active">
+                                    <div class="title">Growing Plan</div>
+                                    <div class="sub-title">
+                                        <h3>Dynamic Website</h3>
+                                        <h3>5+ Pages</h3>
+                                        <h3>Free Domain</h3>
+                                        <h3>Free Hosting</h3>
+                                        <h3>Complete Digital Marketing Support</h3>
+                                        <a href="https://lueurtech.com/websites_pricing/" target="_blank">Get Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- heading -->
+        <div class="flex-itemsheading">
+            <!-- heading for below items -->
+            <div class="flex-containerheading">
+                <div class="flex-itemsheading">
+                    <h1>
+                        Our Services
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- service -->
+        <div class="flex-items">
+
+            <div class="flex-containerservice">
+
+                <div class="containerservice">
+                    <!-- web dec -->
+                    <div class="flex-itemsservice">
+                        <div class="cardservice">
+                            <div class="boxservice">
+                                <div class="contentservice">
+                                    <h2>Dev</h2>
+                                    <h3>Web Development</h3>
+                                    <a href="https://lueurtech.com/websites_pricing/" target="_blank">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- soft dev -->
+                    <div class="flex-itemsservice">
+                        <div class="cardservice">
+                            <div class="boxservice">
+                                <div class="contentservice">
+                                    <h2>Dev</h2>
+                                    <h3>Software Development</h3>
+                                    <a href="https://lueurtech.com/contact-us/" target="_blank">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- intern -->
+                    <div class="flex-itemsservice">
+                        <div class="cardservice">
+                            <div class="boxservice">
+                                <div class="contentservice">
+                                    <h2>Job</h2>
+                                    <h3>Internships</h3>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdeSSi_bNCCgxpVFyVe-gbfUbR--BJ4MTofsq9_kL9XF_Ensw/closedform" target="_blank">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="flex-items">
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+                    <img src="final-logo.png">
+                    <h3>About <span>LueurTech</span></h3>
+
+                    <p class="footer-links">
+                        <a href="#" onclick="topFunction()">Home</a>
+                        |
+                        <a href="https://lueurtech.com/contact-us/" target="_blank">Contact Form</a>
+                        |
+                        <a href="https://lueurtech.com/contact-us/" target="_blank">Enquire Form</a>
+                    </p>
+
+                    <p class="footer-company-name">Copyright © 2021 LueurTech Software Solutions | Powered by LueurTech
+                        Software
+                        Solutions</p>
+                </div>
+
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><a href="https://www.google.com/maps/place/7th+cross,Vinayak+nagar,+geddalahalli/@13.0485321,77.6389822,17z/data=!4m5!3m4!1s0x3bae170e036749cb:0xc9382805761d362b!8m2!3d13.0479308!4d77.6385811?shorturl=1"
+                                target="_blank"><span>#13,vidyasagar
+                                    layout,saraipalya,</span>
+                                <span>Dr. SRK nagar post,</span>
+                                <span>Bangalore-560077.</span></p></a>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <!-- working of +91-9902730881 this number when someone clicks on it to call -->
+                        <p><a href="tel:+91-9902730881">+91-9902730881/991</a></p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:contact@lueurtech.com" target="_blank">contact@lueurtech.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        LueurTech aims to empower your business with the power of innovation.
+
+                        We are a company started by Fresh mind in developing and marketing products.
+
+                        If you would like to work on the latest tools and technologies in a fantastic flexible work
+                        environment,
+                        come and join us..
+                    </p>
+                    <div class="footer-icons">
+                        <a href="https://www.linkedin.com/company/lueurtech-software/" target="_blank">
+                            <i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/LueurTech-Software-Solutions-Pvt-Ltd-108768421586960"
+                            target="_blank">
+                            <i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lueurtech/" target="_blank">
+                            <i class="fa fa-instagram"></i></a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-twitter"></i></a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
